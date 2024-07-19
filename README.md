@@ -1,4 +1,4 @@
-# Wiremock & Django - Dynamic Mocking App via UI
+# Wiremock & Django - Dynamic Mock/Stub App via UI
 
 This project integrates Wiremock with Django to allow for dynamic mocking of APIs through the Django admin interface. 
 The project is containerized using Docker for easy setup and deployment.
@@ -96,6 +96,24 @@ You should receive the following response:
   "message": "This is a test response"
 }
 ```
+
+## Example of a Stub Creation
+**No Response:** Initial request to an API endpoint with no response configured yet.
+![No Response](screenshots/1.png)
+
+**Add a Stub:** Let's add a new stub by using Django Admin Panel.
+![Add a Stub](screenshots/2.png)
+
+**Successfully Created a Stub:** We are testing the Stub we have created.
+![Succesfully Created a Stub](screenshots/3.png)
+
+**Change Mock Configuration:** Editing Stub without restarting anything!
+![Change Response by using admin panel](screenshots/4.png)
+
+Testing the changes we made to Stub
+![Response changed](screenshots/5.png)
+
+
 
 ## Project Structure
 
